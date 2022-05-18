@@ -1,10 +1,9 @@
 <?php
-$servername = "192.168.56.20";
-$username = "dbuser";
-$password = "userpass";
-//DBNAME=dbname
-//DBUSER=dbuser
-//DBPASSWD=userpass
+
+// Database parameters
+$servername = "192.168.56.20";  // Defined in Vagrantfile
+$username = "dbuser";           // Defined in script/db-bootstrap.sh
+$password = "userpass";         // Defined in script/db-bootstrap.sh
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
